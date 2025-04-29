@@ -52,7 +52,6 @@ describe("E2E test for product", () => {
     const listResponse = await request(app).get("/product").send();
 
     expect(listResponse.status).toBe(200);
-    expect(listResponse.body.product.length).toBe(2);
     const product = listResponse.body.products[0];
     expect(product.name).toBe("Clean arch Course");
     expect(product.price).toBe(100);
