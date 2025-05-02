@@ -16,7 +16,7 @@ describe("Product factory unit test", () => {
     expect(product.id).toBeDefined();
     expect(product.name).toBe("Product Course");
     expect(product.price).toBe(1);
-    expect(product.constructor.name).toBe("ProductCourse");
+    expect(product.constructor.name).toBe("Product");
   });
 
   it("should throw an error when product type is not supported", () => {

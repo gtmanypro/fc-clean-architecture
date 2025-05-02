@@ -46,7 +46,7 @@ describe("Unit test create product use case", () => {
       const productCreateUsecase = new CreateProductUseCase(productRepository);
   
       input.name = "Curso Clean Arch";
-      input.price = null;
+      input.price = undefined
   
       await expect(productCreateUsecase.execute(input)).rejects.toThrow(
         "Price is required"
